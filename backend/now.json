@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "alias": "developer-roadmap-api.now.sh",
+  "name": "backend",
+  "env": {
+  },
+  "builds": [
+    {
+      "src": "*.go",
+      "use": "@now/go"
+    }
+  ]
+}
