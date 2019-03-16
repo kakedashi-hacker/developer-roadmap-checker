@@ -40,7 +40,8 @@ const IndexPage: React.FC = () => {
       )}
       {user && (
         <Fragment>
-          <p>Sign Out</p>
+          <p>Hi, {user.displayName} !Sign Out</p>
+          <p><img src={user.photoURL} alt=""/></p>
           <button onClick={() => signOut()}>Sign Out</button>
         </Fragment>
       )}

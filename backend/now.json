@@ -6,8 +6,18 @@
   },
   "builds": [
     {
-      "src": "*.go",
+      "src": "cmd/**/*.go",
       "use": "@now/go"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "cmd/hello.go" 
+    },
+    {
+      "src": "/(.*)",
+      "dest": "cmd/$1.go"
     }
   ]
 }
