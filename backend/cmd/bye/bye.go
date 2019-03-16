@@ -5,8 +5,7 @@ import (
 	"net/http"
 )
 
-
-
+// Handler is okay
 func Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello")
+	fmt.Fprintf(w, r.RequestURI)
 }
